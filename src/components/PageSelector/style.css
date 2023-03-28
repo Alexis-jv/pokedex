@@ -1,0 +1,13 @@
+.PageSelector {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PageSelector > input[type=text] {
+    width: 2rem;
+    padding: .4rem .8rem;
+    color: #fdf0d5;
+    text-align: center;
+    background-color: #00000000;
+    border: none;
+}

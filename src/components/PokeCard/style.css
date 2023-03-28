@@ -1,0 +1,31 @@
+.PokeCard {
+    padding: .4rem .8rem;
+    width: 20%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .4rem;
+    background-color: blueviolet;
+}
+
+.PokeCard > div {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.PokeCard p,
+.PokeCard h3 {
+    margin: 0;
+}
+
+.PokeCard h3 {
+    color: #fdf0d5;
+}
+
+.PokeCard img {
+    height: 96px;
+}
