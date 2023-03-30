@@ -5,7 +5,6 @@ import PokedexPage from './components/PokedexPage';
 
 function App() {
   const [page, setPage] = useState(1);
-  const [limit, setLimit] = useState(12);
 
   function handleClick(value) {
     if (page + value > 0) setPage(page + value);
