@@ -3,5 +3,6 @@
     background-color: #669bbc;
     color: #003049;
     border: .2rem solid #003049;
+    font-weight: 400;
     -webkit-text-stroke: #003049 .1rem;
 }

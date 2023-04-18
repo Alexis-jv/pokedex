@@ -1,0 +1,29 @@
+.Statbar {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+}
+
+.Statbar footer {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.Statbar footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Statbar .bar {
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+}
+
+.Statbar .bar > div {
+    height: 1rem;
+}
+
+.Statbar p {
+    margin: .5rem 0;
+}
