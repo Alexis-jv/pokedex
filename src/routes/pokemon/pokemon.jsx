@@ -19,6 +19,7 @@ export default function Pokemon() {
             setPokemon(data);
             setTypes(data.types.map(type => type.type.name));
             setIsPending(false);
+            console.log(pokemon)
           } catch (e) {
             console.log("Cannot fetch the Pokemon data.");
           }
@@ -29,14 +30,15 @@ export default function Pokemon() {
     return (
         <main>
             <section>
-                <img src="" alt="" />
-                <h2>{pokemon.name}</h2>
+                {/* Content after fetching */}
+                {!isPending && <img src={pokemon.sprites.front_default} alt={pokemon.name + " sprite"} />}
+                {!isPending && <h2>{pokemon.name}</h2>}
                 <ul>
                     <li>Id: {id}</li>
-                    <li>Type: {types}</li>
-                    <li>Height: {pokemon.height}</li>
-                    <li>Weight: {pokemon.weight}</li>
-                    <li></li>
+                    {/* Content after fetching */}
+                    {!isPending && <li>Type: {types.join(", ")}</li>}
+                    {!isPending && <li>Height: {pokemon.height / 10 + "m"}</li>}
+                    {!isPending && <li>Weight: {pokemon.weight / 10 + "kg"}</li>}
                 </ul>
             </section>
             <section>
