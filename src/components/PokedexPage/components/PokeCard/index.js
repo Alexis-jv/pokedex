@@ -11,7 +11,9 @@ export default function PokeCard({ pokemon, isPending }) {
         {!isPending && <p>#{pokemon.id}</p>}
         {!isPending && <h3>{pokemon.name}</h3>}
       </div>
-      {isPending && <img src={"pokemon-ball-icon-9.jpg"} alt="Loading"></img>}
+      {isPending && (
+        <img src={require("./pokemon-ball-icon-9.jpg")} alt="Loading"></img>
+      )}
       {!isPending && (
         <img
           src={pokemon.sprites.front_default}
