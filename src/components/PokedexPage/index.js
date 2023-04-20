@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PokeCard from "../PokeCard";
+import PokeCard from "./components/PokeCard";
 import "./style.css";
 
 export default function PokedexPage({ page }) {

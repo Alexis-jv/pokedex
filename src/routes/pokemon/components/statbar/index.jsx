@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./style.css";
 
-export default function statbar({label, min, max, value, color}) {
+export default function Statbar({label, min, max, value, color}) {
     return (
         <div className="Statbar">
             <p>{label}</p>
