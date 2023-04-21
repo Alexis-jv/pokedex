@@ -4,4 +4,23 @@
     margin: auto;
     padding: .4rem .8rem;
     border-radius: .4rem;
+    display: flex;
+}
+
+.Pokemon section {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.Pokemon section:first-child {
+    align-items: center;
+}
+
+.Pokemon section:last-child {
+    width: 20rem;
+}
+
+.Pokemon img {
+    height: 144px;
 }
