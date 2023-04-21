@@ -28,11 +28,11 @@ export default function Pokemon() {
       }, [id]);
 
     return (
-        <main>
+        <main className="Pokemon">
             <section>
                 {/* Content after fetching */}
                 {!isPending && <img src={pokemon.sprites.front_default} alt={pokemon.name + " sprite"} />}
-                {!isPending && <h2>{pokemon.name}</h2>}
+                {!isPending && <h2>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2>}
                 <ul>
                     <li>Id: {id}</li>
                     {/* Content after fetching */}

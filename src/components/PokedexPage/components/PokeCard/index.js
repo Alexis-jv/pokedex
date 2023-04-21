@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./style.css";
+import "../../../../color-types.css";
 
 export default function PokeCard({ pokemon, isPending }) {
-  console.log(pokemon.color);
   return (
-    <div className="PokeCard" style={{ backgroundColor: "gray" }}>
+    <div className={"PokeCard " + pokemon.types[0].type.name}>
       <div>
         {isPending && <p>#00</p>}
         {isPending && <h3>-------</h3>}

@@ -1,0 +1,7 @@
+.Pokemon {
+    background-color: #ffffff;
+    width: fit-content;
+    margin: auto;
+    padding: .4rem .8rem;
+    border-radius: .4rem;
+}

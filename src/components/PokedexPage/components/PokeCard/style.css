@@ -6,7 +6,6 @@
     justify-content: space-between;
     align-items: center;
     border-radius: .4rem;
-    background-color: blueviolet;
 }
 
 .PokeCard > div {
@@ -20,6 +19,7 @@
 .PokeCard p,
 .PokeCard h3 {
     margin: 0;
+    text-align: left;
 }
 
 .PokeCard h3 {
