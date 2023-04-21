@@ -1,0 +1,123 @@
+/* Types colors */
+
+.bug {
+    background-color: rgb(169,184,33);
+}
+
+.normal {
+    background-color: rgb(168,169,121);
+}
+
+.fire {
+    background-color: rgb(240,129,49);
+}
+
+.grass {
+    background-color: rgb(121,201,80);
+}
+
+.ground {
+    background-color: rgb(225,192,105);
+}
+
+.steel {
+    background-color: rgb(185,185,208);
+}
+
+.ghost {
+    background-color: rgb(112,89,153);
+}
+
+.water {
+    background-color: rgb(105,145,240);
+}
+
+.fighting {
+    background-color: rgb(192,49,41);
+}
+
+.dark {
+    background-color: rgb(113,88,73);
+}
+
+.rock {
+    background-color: rgb(185,161,56);
+}
+
+.psychic {
+    background-color: rgb(249,88,137);
+}
+
+.dragon {
+    background-color: rgb(112,57,249);
+}
+
+.flying {
+    background-color: rgb(169,145,240);
+}
+
+.electric {
+    background-color: rgb(249,208,49);
+}
+
+.poison {
+    background-color: rgb(161,65,160);
+}
+
+.ice {
+    background-color: rgb(152,216,216);
+}
+
+.hmmm {
+    background-color: rgb(185,161,56);
+}
+
+/* Colors */
+
+.red {
+    background-color: rgb(249,160,161);
+}
+
+.orange {
+    background-color: rgb(249,200,145);
+}
+
+.gold {
+    background-color: rgb(254,224,97);
+}
+
+.yellow {
+    background-color: rgb(255,254,152);
+}
+
+.green {
+    background-color: rgb(171,209,95);
+}
+
+.blue {
+    background-color: rgb(128,192,224);
+}
+
+.purple {
+    background-color: rgb(197,150,189);
+}
+
+.pink {
+    background-color: rgb(254,225,255);
+}
+
+.white {
+    background-color: rgb(254,255,254);
+}
+
+.gray {
+    background-color: rgb(225,225,224);
+}
+
+.brown {
+    background-color: rgb(205,153,103);
+}
+
+.black {
+    background-color: rgb(187,186,186);
+}
