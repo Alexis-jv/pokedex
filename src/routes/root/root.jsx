@@ -21,7 +21,6 @@ function Root() {
         onArrowClick={(value) => handleClick(value)}
         onPageChange={(page) => handleChange(page)}
       />
-      <Statbar label={"Attack"} min="20" max="220" value="120" color="blue" />
     </div>
   );
 }
