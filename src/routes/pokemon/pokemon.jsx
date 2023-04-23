@@ -44,23 +44,38 @@ export default function Pokemon() {
               alt={pokemon.name + " sprite"}
             />
           )}
+          {/* Content while fetching */}
+          {isPending && <span>Id: --</span>}
+          {isPending && <span>Type: ----, ----</span>}
+          {isPending && <span>Height: --m</span>}
+          {isPending && <span>Weight: --kg</span>}
+          {/* Content after fetching */}
           {!isPending && (
-            <h2>
-              {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
-            </h2>
+            <span>
+              <h2>
+                {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
+              </h2>
+              <p>#{pokemon.id}</p>
+            </span>
           )}
-          <ul>
-            {/* Content while fetching */}
-            {isPending && <li>Id: --</li>}
-            {isPending && <li>Type: ----, ----</li>}
-            {isPending && <li>Height: --m</li>}
-            {isPending && <li>Weight: --kg</li>}
-            {/* Content after fetching */}
-            {!isPending && <li>Id: {pokemon.id}</li>}
-            {!isPending && <li>Type: {types.join(", ")}</li>}
-            {!isPending && <li>Height: {pokemon.height / 10 + "m"}</li>}
-            {!isPending && <li>Weight: {pokemon.weight / 10 + "kg"}</li>}
-          </ul>
+          {!isPending && (
+            <span>
+              <p>Type:</p>
+              <p>{types.join(", ")}</p>
+            </span>
+          )}
+          {!isPending && (
+            <span>
+              <p>Height:</p>
+              <p>{pokemon.height / 10 + "m"}</p>
+            </span>
+          )}
+          {!isPending && (
+            <span>
+              <p>Weight:</p>
+              <p>{pokemon.weight / 10 + "kg"}</p>
+            </span>
+          )}
         </section>
         <section>
           {/* statistics */}

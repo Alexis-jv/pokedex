@@ -1,5 +1,5 @@
 .Pokemon {
-    width: 35rem;
+    width: 48rem;
     background-color: #ffffff;
     border-radius: .4rem;
     display: flex;
@@ -13,13 +13,14 @@
 }
 
 .Pokemon section:first-child {
+    flex: 2;
     align-items: center;
     border-radius: .4rem 0 0 .4rem;
     color: #ffffff;
 }
 
 .Pokemon section:last-child {
-    flex: 1;
+    flex: 3;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -27,4 +28,12 @@
 
 .Pokemon img {
     height: 144px;
+}
+
+.Pokemon span {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 }
