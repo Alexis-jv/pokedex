@@ -7,10 +7,10 @@ export default function Statbar({label, min, max, value, color}) {
             <p>{label}: {value}</p>
             <footer>
                 <div className="bar"><div className={color} style={{width: `${(value-min)*100/(max-min)}%`}}></div></div>
-                <div>
+                {/*<div>
                     <p>{min}</p>
                     <p>{max}</p>
-                </div>
+                </div>*/}
             </footer>
         </div>
     )

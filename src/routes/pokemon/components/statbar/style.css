@@ -17,13 +17,16 @@
 
 .Statbar .bar {
     width: 100%;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(219, 219, 219);
+    border-radius: .4rem;
+    margin-bottom: .4rem;
 }
 
 .Statbar .bar > div {
-    height: 1rem;
+    height: .8rem;
+    border-radius: .4rem;
 }
 
 .Statbar p {
-    margin: .5rem 0;
+    margin: .4rem 0;
 }

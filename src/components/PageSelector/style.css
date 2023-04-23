@@ -1,6 +1,5 @@
 .PageSelector {
     display: flex;
-    justify-content: space-between;
 }
 
 .PageSelector > input[type=text] {
