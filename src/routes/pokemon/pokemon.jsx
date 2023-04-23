@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.css";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Statbar from "./components/statbar";
+import Button from "../../components/Button/index.js";
 
 export default function Pokemon() {
   const { id } = useParams();
@@ -10,6 +11,8 @@ export default function Pokemon() {
 
   const [pokemon, setPokemon] = useState({});
   const [types, setTypes] = useState([]);
+
+  const navigates = useNavigate();
 
   useEffect(() => {
     async function fetchPokemon() {
@@ -29,7 +32,11 @@ export default function Pokemon() {
   }, [id]);
 
   return (
-    <>
+    <div className="DetailsPage">
+      <header>
+        <img src={require("../../Pokédex_logo.png")} alt="Pokédex logo" />
+        <Button buttonValue="Home" onButtonClick={() => navigates("/")} />
+      </header>
       <main className="Pokemon">
         <section className={isPending ? "gray" : types[0]}>
           {/* Content while fetching */}
@@ -45,10 +52,30 @@ export default function Pokemon() {
             />
           )}
           {/* Content while fetching */}
-          {isPending && <span>Id: --</span>}
-          {isPending && <span>Type: ----, ----</span>}
-          {isPending && <span>Height: --m</span>}
-          {isPending && <span>Weight: --kg</span>}
+          {isPending && (
+            <span>
+              <h2>------</h2>
+              <p>#--</p>
+            </span>
+          )}
+          {isPending && (
+            <span>
+              <p>Type:</p>
+              <p>----, ----</p>
+            </span>
+          )}
+          {isPending && (
+            <span>
+              <p>Height:</p>
+              <p>--m</p>
+            </span>
+          )}
+          {isPending && (
+            <span>
+              <p>Weight:</p>
+              <p>--kg</p>
+            </span>
+          )}
           {/* Content after fetching */}
           {!isPending && (
             <span>
@@ -95,6 +122,7 @@ export default function Pokemon() {
           {/*isPending && (() => {for (let i=0; i<5; i++) {<Statbar key={i} label="------" min="0" max="200" value="100" color="gray" />}})*/}
         </section>
       </main>
-    </>
+      <footer></footer>
+    </div>
   );
 }

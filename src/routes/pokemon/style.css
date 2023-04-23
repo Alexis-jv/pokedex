@@ -1,39 +1,74 @@
+.DetailsPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .Pokemon {
-    width: 48rem;
-    background-color: #ffffff;
-    border-radius: .4rem;
-    display: flex;
-    align-items: center;
+  width: 48rem;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .Pokemon section {
-    padding: 1.4rem 1.8rem;
-    display: flex;
-    flex-flow: column nowrap;
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .Pokemon section:first-child {
-    flex: 2;
-    align-items: center;
-    border-radius: .4rem 0 0 .4rem;
-    color: #ffffff;
+  flex: 2;
+  align-items: center;
+  border-radius: 0.4rem 0 0 0.4rem;
+  color: #ffffff;
 }
 
 .Pokemon section:last-child {
-    flex: 3;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
+  flex: 3;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 
 .Pokemon img {
-    height: 144px;
+  height: 144px;
 }
 
 .Pokemon span {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.DetailsPage > header {
+  width: 100%;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  align-items: center;
+  background-color: #cf040d;
+  border: 0.2rem solid #f00610;
+  box-sizing: border-box;
+}
+
+.DetailsPage > header img {
+  height: 3rem;
+  margin-right: auto;
+}
+
+.DetailsPage > footer {
+  width: 100%;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cf040d;
+  border: 0.2rem solid #f00610;
+  box-sizing: border-box;
 }

@@ -2,7 +2,6 @@ import "./style.css";
 import { useState } from "react";
 import PageSelector from "../../components/PageSelector/index.js";
 import PokedexPage from "../../components/PokedexPage";
-import Statbar from "../pokemon/components/statbar";
 
 function Root() {
   const [page, setPage] = useState(1);
@@ -15,12 +14,17 @@ function Root() {
   }
   return (
     <div className="Root">
+      <header>
+        <img src={require("../../Pokédex_logo.png")} alt="Pokédex logo" />
+      </header>
       <PokedexPage page={page} />
-      <PageSelector
-        page={page}
-        onArrowClick={(value) => handleClick(value)}
-        onPageChange={(page) => handleChange(page)}
-      />
+      <footer>
+        <PageSelector
+          page={page}
+          onArrowClick={(value) => handleClick(value)}
+          onPageChange={(page) => handleChange(page)}
+        />
+      </footer>
     </div>
   );
 }
