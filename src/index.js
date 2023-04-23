@@ -4,9 +4,9 @@ import "./index.css";
 import Root from "./routes/root/root";
 import Pokemon from "./routes/pokemon/Pokemon";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
