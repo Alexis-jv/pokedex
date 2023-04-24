@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import PokeCard from "./components/PokeCard";
 import "./style.css";
 
-export default function PokedexPage({ page }) {
-  const [limit, setLimit] = useState(12);
+export default function PokedexPage({ page, limit, getPokemonCount }) {
   const [pokemons, setPokemons] = useState([]);
   const [isPending, setIsPending] = useState(true);
 
@@ -17,6 +16,10 @@ export default function PokedexPage({ page }) {
           }&limit=${limit}`
         );
         const data = await res.json();
+
+        /* Update the Pokemon count */
+        getPokemonCount(data.count);
+
         const pokemonPromises = await data.results.map((result) =>
           fetch(result.url)
         );
