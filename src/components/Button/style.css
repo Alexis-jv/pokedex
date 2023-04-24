@@ -1,8 +1,8 @@
 .Button {
-    padding: .4rem .8rem;
-    background-color: #669bbc;
-    color: #003049;
-    border: .2rem solid #003049;
-    font-weight: 400;
-    -webkit-text-stroke: #003049 .1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #03a9da;
+  color: #013d50;
+  border: 0.2rem solid #013d50;
+  font-weight: 400;
+  -webkit-text-stroke: #013d50 0.1rem;
 }
