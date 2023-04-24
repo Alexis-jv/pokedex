@@ -1,40 +1,40 @@
 .PokeCard {
-    text-decoration: none;
-    padding: 0;
-    width: 24%;
-    height: fit-content;
-    display: flex;
-    border-radius: .4rem;
+  text-decoration: none;
+  padding: 0;
+  width: 24%;
+  height: fit-content;
+  display: flex;
+  border-radius: 0.4rem;
 }
 
 .PokeCard > div {
-    padding: .4rem .8rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: .4rem;
+  padding: 0.4rem 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.4rem;
 }
 
 .PokeCard > div > div {
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: start;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: start;
 }
 
 .PokeCard p,
 .PokeCard h3 {
-    margin: 0;
-    text-align: left;
-    color: black;
+  margin: 0;
+  text-align: left;
+  color: black;
 }
 
 .PokeCard h3 {
-    color: #fdf0d5;
+  color: #f2f2f2;
 }
 
 .PokeCard img {
-    height: 96px;
+  height: 96px;
 }

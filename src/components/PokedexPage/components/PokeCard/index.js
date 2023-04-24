@@ -11,15 +11,26 @@ export default function PokeCard({ pokemon, isPending }) {
           {isPending && <p>#00</p>}
           {isPending && <h3>-------</h3>}
           {!isPending && <p>#{pokemon.id}</p>}
-          {!isPending && <h3>{pokemon.name}</h3>}
+          {!isPending && (
+            <h3>
+              {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
+            </h3>
+          )}
         </div>
         {isPending && (
-          <img src={require("./pokemon-ball-icon-9.jpg")} alt="Loading"></img>
+          <img
+            src={require("./pokemon-ball-icon-9.jpg")}
+            alt="Loading"
+            width="96"
+            height="96"
+          ></img>
         )}
         {!isPending && (
           <img
             src={pokemon.sprites.front_default}
             alt={pokemon.name + " sprite"}
+            width="96"
+            height="96"
           ></img>
         )}
       </div>
