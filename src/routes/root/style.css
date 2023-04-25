@@ -9,6 +9,7 @@
 
 .Root > header {
   width: 100%;
+  height: 4.2rem;
   padding: 0.4rem 0.8rem;
   display: flex;
   align-items: center;
