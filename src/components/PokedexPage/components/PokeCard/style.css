@@ -38,3 +38,21 @@
 .PokeCard img {
   height: 96px;
 }
+
+@media screen and (max-width: 1080px) {
+  .PokeCard {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .PokeCard {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .PokeCard > div {
+    flex-direction: column-reverse;
+  }
+}
