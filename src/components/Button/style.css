@@ -4,5 +4,6 @@
   color: #013d50;
   border: 0.2rem solid #013d50;
   font-weight: 400;
+  cursor: pointer;
   -webkit-text-stroke: #013d50 0.1rem;
 }
