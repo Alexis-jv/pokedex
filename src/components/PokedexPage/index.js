@@ -31,13 +31,11 @@ export default function PokedexPage({ page, limit, getPokemonCount }) {
         );
         setPokemons(alldata);
         setIsPending(false);
-        console.log(alldata);
       } catch (e) {
         console.log("Cannot fetch all Pokemons.");
       }
     }
     fetchPokemons();
-    console.log(pokemons);
   }, [page, limit]);
 
   return (

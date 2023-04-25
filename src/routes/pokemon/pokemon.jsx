@@ -23,7 +23,6 @@ export default function Pokemon() {
         setPokemon(data);
         setTypes(data.types.map((type) => type.type.name));
         setIsPending(false);
-        console.log(pokemon);
       } catch (e) {
         console.log("Cannot fetch the Pokemon data.");
       }
