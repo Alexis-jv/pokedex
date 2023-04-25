@@ -2,8 +2,8 @@ import React from "react";
 import "./style.css";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Statbar from "./components/statbar";
-import Button from "../../components/Button/index.js";
+import Statbar from "./components/StatBar/index";
+import Button from "../../components/Button/index";
 
 export default function Pokemon() {
   const { id } = useParams();

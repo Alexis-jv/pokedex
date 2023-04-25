@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Root from "./routes/root/root";
+import Root from "./routes/Root/Root";
 import Pokemon from "./routes/pokemon/Pokemon";
 import reportWebVitals from "./reportWebVitals";
 import { createHashRouter, RouterProvider } from "react-router-dom";
